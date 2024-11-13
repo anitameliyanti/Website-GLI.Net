@@ -11,24 +11,24 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="image/logo.png" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Layanan</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                <li class="nav-item"><a class="btn btn-primary" href="#">Berlangganan Sekarang</a></li>
-            </ul>
-        </div>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container">
+      <a class="navbar-brand" href="#">
+          <img src="image/logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" href="Homepage.html">Beranda</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
+              <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="btn btn-primary" href="#">Berlangganan Sekarang</a></li>
+          </ul>
+      </div>
+  </div>
 </nav>
 
 <!-- Banner Section -->
@@ -305,36 +305,52 @@
   </div>
 
 <!-- Footer -->
-<footer class="bg-primary text-white py-4">
+<footer class="footer">
   <div class="container">
-      <div class="row">
-          <div class="col-md-4">
-              <h5>PT Global Lintas Iramada Network</h5>
-              <p>Global, Connect, Collaboration.</p>
-              <div>
-                  <a href="#"><img src="facebook-icon.png" alt="Facebook" width="24"></a>
-                  <a href="#"><img src="twitter-icon.png" alt="Twitter" width="24"></a>
-                  <a href="#"><img src="instagram-icon.png" alt="Instagram" width="24"></a>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <h5>Business Associates</h5>
-              <ul class="list-unstyled">
-                  <li><a href="#" class="text-white">Investor</a></li>
-                  <li><a href="#" class="text-white">Sales Associate</a></li>
-                  <li><a href="#" class="text-white">Technical Associate</a></li>
-              </ul>
-          </div>
-          <div class="col-md-4">
-              <h5>Contacts</h5>
-              <p>Jl. Telekomunikasi No.123, Jakarta</p>
-              <p>Email: info@globalnetwork.co.id</p>
-              <p>Phone: +62-21-1234-5678</p>
-          </div>
+    <div class="row text-center text-md-start">
+      <div class="col-md-3 footer-logo mb-3">
+        <!-- Tambahkan Gambar Logo -->
+        <img src="image/logo.png" alt="Logo PT. Global Lintas Iramada" style="width: 100px;"> <!-- Sesuaikan ukuran sesuai kebutuhan -->
+        <h4>PT. Global Lintas Iramada</h4>
+        <p>Gli.net, Connect, Collaborate.</p>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
       </div>
-      <div class="text-center mt-3">
-          <p>Copyright © 2024 PT Global Lintas Iramada Network. All Rights Reserved.</p>
+      <div class="col-md-3 mb-3">
+        <h5>Business Associates</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-chevron-right"></i><a href="#">Mitra Associate</a></li>
+          <li><i class="bi bi-chevron-right"></i><a href="#">Sales Associate</a></li>
+          <li><i class="bi bi-chevron-right"></i><a href="#">Technical Associate</a></li>
+        </ul>
       </div>
+      <div class="col-md-3 mb-3">
+        <h5>Layanan</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-chevron-right"></i><a href="#">Broadband Dedicated</a></li>
+          <li><i class="bi bi-chevron-right"></i><a href="#">Premier Dedicated</a></li>
+          <li><i class="bi bi-chevron-right"></i><a href="#">IP Transit</a></li>
+          <li><i class="bi bi-chevron-right"></i><a href="#">Shared Hosting</a></li>
+          <li><i class="bi bi-chevron-right"></i><a href="#">Virtual Private Server</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-3">
+        <h5>Contacts</h5>
+        <ul class="list-unstyled contact-info">
+          <li><i class="bi bi-geo-alt"></i>Jl. Pasar Candipuro, Desa Titiwangi, Kec. Candipuro, Kabupaten Lampung Selatan, Provinsi Lampung</li>
+          <li><i class="bi bi-envelope"></i><a href="mailto:info@gli.net.net.id">info@gli.net.net.id</a></li>
+          <li><i class="bi bi-telephone"></i><a href="#">+62 21-794-0911</a></li>
+          <li><i class="bi bi-telephone"></i><a href="#">+62 21-509-83-773</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="mb-0">&copy; 2024 PT. Global Lintas Iramada. All Rights Reserved.</p>
+    </div>
   </div>
 </footer>
 
