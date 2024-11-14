@@ -8,6 +8,83 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css"> 
 </head>
+<style>
+    /* style about */
+
+.about-description {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+/* Section Utama */
+.tentang-kami-section {
+    position: relative;
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.tentang-kami-section::before {
+    content: "";
+    position: absolute;
+    width: 1291px;
+    height: 258px;
+    background-color: #1D6CB2; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Agar berada di belakang gambar dan teks */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.tentang-kami-section img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    left: 30px;
+}
+
+.about-description {
+    position: relative;
+    z-index: 2; 
+    width: 532px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #7A7777;
+    margin-top: -100px; /*angka negatif untuk menaikan posisi */
+    margin-left: -30px;
+}
+
+.about-description h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1D6CB2;
+    font-weight: 700;
+}
+
+.about-description p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* <section visi & misi> */
+
+.card-body {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 210px; 
+    width: 565px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+</style>
 <body>
 
 <!-- Navbar -->
