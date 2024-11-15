@@ -15,7 +15,7 @@
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -72,18 +72,157 @@
 
 /* <section visi & misi> */
 
+.visi-misi {
+    color: #1D6CB2;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.title-line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0; 
+}
+.mb-4-visimisi{
+    margin-bottom: 6rem;
+}
+.title-line::before,
+.title-line::after {
+    content: "";
+    flex: 1; 
+    height: 1px; 
+    background-color: #000000; 
+}
+
+.title-line::before {
+    margin-right: 15px;
+}
+
+.title-line::after {
+    margin-left: 15px; 
+}
+
+.text-primary {
+    color: #1D6CB2;
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+
 .card-body {
     border: none;
     border-radius: 8px;
     overflow: hidden;
-    height: 210px; 
-    width: 565px; 
+    height: 190px; 
+    width: 545px;
+    text-align: left; 
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: 'open sans', sans-serif;
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
+.card-title {
+    font-weight: bolder;
+    color: #1D6CB2;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.card-text {
+    font-size: 18px;
+    color: #737373;
+}
 .card:hover{
     transform: translateY(-10px);
 }
+
+/* Tim Kami Section */
+
+.container {
+    max-width: 1140px;
+}
+
+/* Judul dan Teks */
+.tim-kami-text h2 {
+    color: #3d3e3e;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 90%;
+    margin-top: 10px;
+}
+
+.tim-kami-text p {
+    color: #737373;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Progress bar */
+.progress {
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    font-size: 12px;
+}
+
+/* Kolom gambar dan teks */
+.tim-kami-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Responsif untuk tampilan mobile */
+@media (max-width: 768px) {
+    .tim-kami-text h2 {
+        font-size: 24px; 
+        text-align: center; 
+    }
+
+    .tim-kami-text p {
+        font-size: 14px; 
+        text-align: center; 
+    }
+
+    .tim-kami-col {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .progress {
+        height: 12px;
+        margin-bottom: 10px;
+    }
+
+    .progress-bar {
+        font-size: 12px;
+    }
+
+    .tim-kami-img {
+        max-width: 100%; /* Gambar menjadi responsif */
+    }
+}
+
+/* Menyesuaikan kolom gambar di desktop */
+.tim-kami-img {
+    max-width: 100%; 
+    order: 2;
+}
+
+.tim-kami-text {
+    order: 1;
+}
+
+
+
 </style>
 <body>
 
@@ -107,7 +246,6 @@
         </div>
     </div>
 </nav>
-
 <!-- Tentang Kami Section -->
 <section class="tentang-kami-section">
     <div class="container my-5 mt-5">
@@ -127,7 +265,7 @@
 <!-- Visi & Misi Section -->
 <section class="visi misi py-5">
     <div class="container text-center">
-        <h2 class="text-primary mb-4">Visi & Misi</h2>
+        <h2 class="visi-misi mb-4-visimisi title-line">Visi & Misi</h2>
         <div class="row">
             <div class="col-md-6 mb-4">
                 <div class="card shadow-sm">
@@ -148,29 +286,28 @@
         </div>
     </div>
 </section>
-
 <!-- Tim Berpengalaman Section -->
 <section class="container my-5">
-    <div class="text-center">
-        <h2>Kami Memiliki Tim Berpengalaman dan Berkemampuan Dibidangnya</h2>
-    </div>
     <div class="row align-items-center mt-4">
-        <div class="col-lg-6">
+        <div class="col-lg-6 tim-kami-img">
+            <img src="image/about konten 2.png" class="img-fluid" alt="Team">
+        </div>
+        <div class="col-lg-6 tim-kami-text">
+            <div class="text-left">
+                <h2>Kami Memiliki Tim Berpengalaman dan Berkemampuan Dibidangnya</h2>
+            </div>
             <p>Technical Skills</p>
             <div class="progress mb-3">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;">85%</div>
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;">95%</div>
             </div>
             <p>Customer Support</p>
             <div class="progress mb-3">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;">90%</div>
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;">95%</div>
             </div>
             <p>Networking Skills</p>
             <div class="progress">
                 <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;">95%</div>
             </div>
-        </div>
-        <div class="col-lg-6">
-            <img src="image/about konten 2.png" class="img-fluid" alt="Team">
         </div>
     </div>
 </section>
@@ -180,7 +317,6 @@
     <div class="container">
       <div class="row text-center text-md-start">
         <div class="col-md-3 footer-logo mb-3">
-          <!-- Tambahkan Gambar Logo -->
           <img src="image/logo.png" alt="Logo PT. Global Lintas Iramada" style="width: 100px;"> <!-- Sesuaikan ukuran sesuai kebutuhan -->
           <h4>PT. Global Lintas Iramada</h4>
           <p>Gli.net, Connect, Collaborate.</p>
