@@ -35,6 +35,8 @@ Route::get('/about', function () {
 Auth::routes();
 
 Route::middleware(['auth'])->group(function () {
+    Route::get('/login', [App\Http\Controllers\Auth\LoginController::class, 'showLoginForm'])->name('login');
+    Route::post('/login', [App\Http\Controllers\Auth\LoginController::class, 'login']);
     Route::get('/dashboard', [ProductController::class, 'index'])->name('dashboard');
     Route::get('/logout', function () {
         Auth::logout();
