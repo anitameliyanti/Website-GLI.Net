@@ -46,28 +46,30 @@
 
     /* Right Section */
     .right-section {
-            position: relative;
-            height: 100%;
-            width: 50%;
-            background: #afd1f1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .right-section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -50px;
-            width: 110%;
-            height: 100%;
-            background-color: #ABD2F6;
-            transform: skewX(-10deg);
-            z-index: 0;
-        }
+        position: relative;
+        height: 100%;
+        width: 50%;
+        background: #afd1f1;
+    }
+    .right-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -50px;
+        width: 110%;
+        height: 100%;
+        background-color: #ABD2F6;
+        transform: skewX(-10deg);
+        z-index: 0;
+    }
+
     /* Register Box */
     .register-box {
-      z-index: 1;
+      position: fixed; /* Tetap di atas elemen lain */
+      top: 50%; /* Vertikal tengah */
+      left: 50%; /* Horizontal tengah */
+      transform: translate(-50%, -50%); /* Koreksi untuk pusat */
+      z-index: 9999; /* Di atas elemen lain */
       background: white;
       padding: 30px;
       border-radius: 8px;
@@ -99,6 +101,10 @@
       .right-section {
         width: 100%;
       }
+      .register-box {
+        background: none;
+        box-shadow: none;
+      }
     }
   </style>
 </head>
@@ -111,43 +117,45 @@
 
     <!-- Right Section -->
     <div class="right-section">
-      <!-- Register Box -->
-      <div class="register-box">
-        <h3 class="mb-4">Sign Up</h3>
-        <p>Already have an account? <a href="#" class="text-primary">Login</a></p>
-        <form>
-          <div class="mb-3">
-            <div class="input-group">
-              <span class="input-group-text"><i class="bi bi-person"></i></span>
-              <input type="text" class="form-control" placeholder="Username" required>
-            </div>
-          </div>
-          <div class="mb-3">
-            <div class="input-group">
-              <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-              <input type="email" class="form-control" placeholder="Email" required>
-            </div>
-          </div>
-          <div class="mb-3">
-            <div class="input-group">
-              <span class="input-group-text"><i class="bi bi-key"></i></span>
-              <input type="password" class="form-control" placeholder="Password" required>
-            </div>
-          </div>
-          <div class="mb-3">
-            <div class="input-group">
-              <span class="input-group-text"><i class="bi bi-check2-circle"></i></span>
-              <input type="password" class="form-control" placeholder="Confirm Password" required>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary w-100 mb-3">Sign Up</button>
-        </form>
-        <p>or continue with</p>
-        <div class="d-grid gap-2">
-          <button class="btn btn-google"><i class="bi bi-google"></i> Sign up with Google</button>
-          <button class="btn btn-apple"><i class="bi bi-apple"></i> Sign up with Apple</button>
+      <p>Content behind the register box.</p>
+    </div>
+  </div>
+
+  <!-- Register Box -->
+  <div class="register-box">
+    <h3 class="mb-4">Sign Up</h3>
+    <p>Already have an account? <a href="#" class="text-primary">Login</a></p>
+    <form>
+      <div class="mb-3">
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-person"></i></span>
+          <input type="text" class="form-control" placeholder="Username" required>
         </div>
       </div>
+      <div class="mb-3">
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-key"></i></span>
+          <input type="password" class="form-control" placeholder="Password" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-check2-circle"></i></span>
+          <input type="password" class="form-control" placeholder="Confirm Password" required>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary w-100 mb-3">Sign Up</button>
+    </form>
+    <p>or continue with</p>
+    <div class="d-grid gap-2">
+      <button class="btn btn-google"><i class="bi bi-google"></i> Sign up with Google</button>
+      <button class="btn btn-apple"><i class="bi bi-apple"></i> Sign up with Apple</button>
     </div>
   </div>
 </body>
