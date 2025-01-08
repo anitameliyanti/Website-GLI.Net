@@ -5,6 +5,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SuperAdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +38,16 @@ Route::get('register', [RegisterController::class, 'showRegistrationForm'])->nam
 Route::post('register', [RegisterController::class, 'register']);
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
+
+Route::get('/superadmin/login', [LoginController::class, 'showSuperAdminLoginForm'])->name('superadmin.login');
+Route::post('/superadmin/login', [LoginController::class, 'superAdminLogin']);
+Route::group(['middleware' => ['superadmin']], function() {
+    // Route untuk halaman Super Admin
+    Route::get('/superadmin', [SuperAdminController::class, 'index'])->name('superadmin.index');
+});
+// Mengakses data pengguna untuk superadmin
+Route::get('/superadmin/users', [UserController::class, 'index'])->name('users.index');
+
 
 // Authenticated Routes
 Route::middleware(['auth'])->group(function () {

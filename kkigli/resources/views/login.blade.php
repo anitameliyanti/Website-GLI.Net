@@ -131,6 +131,11 @@
     </style>
 </head>
 <body>
+@if (session('status'))
+    <div class="alert alert-success">
+        {{ session('status') }}
+    </div>
+@endif
     <div class="container-fluid">
         <div class="row w-100 h-100">
             <!-- Left Section -->
@@ -144,11 +149,6 @@
             </div>
             <!-- Right Section -->
             <div class="col-md-6 right-section">
-            @if (session('status'))
-                <div class="alert alert-success">
-                    {{ session('status') }}
-                </div>
-            @endif
                 <div class="login-box">
                     <h3>LOGIN</h3>
                     <!-- Login Form -->
