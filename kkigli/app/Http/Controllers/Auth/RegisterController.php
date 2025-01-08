@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -12,13 +13,14 @@ use Illuminate\Support\Facades\Validator;
 class RegisterController extends Controller
 {
     /*
-    |--------------------------------------------------------------------------
+    |----------------------------------------------------------------------
     | Register Controller
-    |--------------------------------------------------------------------------
+    |----------------------------------------------------------------------
     |
-    | This controller handles the registration of new users as well as their
-    | validation and creation. By default this controller uses a trait to
-    | provide this functionality without requiring any additional code.
+    | This controller handles the registration of new users as well as
+    | their validation and creation. By default this controller uses
+    | a trait to provide this functionality without requiring any
+    | additional code.
     |
     */
 
@@ -39,6 +41,16 @@ class RegisterController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
+    }
+
+    /**
+     * Show the registration form.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function showRegistrationForm()
+    {
+        return view('register');
     }
 
     /**
@@ -70,4 +82,23 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
+
+    /**
+     * Handle a registration request for the application.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function register(Request $request)
+{
+    // Validasi data registrasi
+    $this->validator($request->all())->validate();
+
+    // Buat user baru
+    $user = $this->create($request->all());
+
+    // Redirect ke halaman login dengan pesan sukses
+    return redirect()->route('login')->with('status', 'Registrasi berhasil! Silakan login.');
+}
+
 }
