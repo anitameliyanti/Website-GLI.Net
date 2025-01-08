@@ -14,23 +14,22 @@ class ProductController extends Controller
         return view('dashboard', compact('products'));
     }
 
-    public function create()
-    {
-        return view('products.create');
-    }
-
     public function store(Request $request)
     {
-        $request->validate([
-            'nama' => 'required',
-            'tempat_tinggal' => 'required',
-            'layanan' => 'required',
-            'masa_berlaku' => 'required',
+        // Validasi input
+        $validatedData = $request->validate([
+            'nama' => 'required|string|max:255',
+            'tempat_tinggal' => 'required|string|max:255',
+            'layanan' => 'required|string|max:255',
+            'masa_berlaku' => 'required|date',
+            'masa_habis' => 'required|date'
         ]);
-
-        Product::create($request->all());
-        return redirect()->route('dashboard')->with('success', 'Produk berhasil ditambahkan!');
+    
+        // Menyimpan data produk yang sudah tervalidasi
+        Product::create($validatedData);
+        return redirect()->route('home')->with('success', 'Pelanggan berhasil ditambahkan!');
     }
+    
 
     public function edit(Product $product)
     {
@@ -44,10 +43,11 @@ class ProductController extends Controller
             'tempat_tinggal' => 'required',
             'layanan' => 'required',
             'masa_berlaku' => 'required',
+            'masa_habis' => 'required|date'
         ]);
 
         $product->update($request->all());
-        return redirect()->route('dashboard')->with('success', 'Produk berhasil diperbarui!');
+        return redirect()->route('home')->with('success', 'Produk berhasil diperbarui!');
     }
 
     public function destroy(Product $product)
