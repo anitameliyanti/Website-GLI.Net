@@ -39,21 +39,19 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="banner" style="background-image: url('{{asset('image/banner-a.jpg')}}');">
-          <h2>Internet Only</h2>
+          <h2>Global Lintas Iramada Network</h2>
           <p>Internet CEPAT, Streaming BEBAS, TANPA Batasan</p>
-          <p><span style="text-decoration: line-through;">Rp 279,000</span> <span class="fs-3 text-warning">Rp
-              259,000</span></p>
-          <a href="#" class="btn btn-primary">Daftar disini</a>
+          <p><span>Mulai dari</span> <span class="fs-3 text-warning">Rp
+              199,000 / Bulan</span></p>
+          <a href="https://wa.me/62895332360440?text=Hallo%20Admin%20Gli.Net" class="btn btn-primary">Daftar disini</a>
         </div>
       </div>
 
       <div class="carousel-item">
         <div class="banner" style="background-image: url('image/banner-b.jpg');">
-          <h2>Internet Only</h2>
-          <p>Internet CEPAT, Streaming BEBAS, TANPA Batasan</p>
-          <p><span style="text-decoration: line-through;">Rp 279,000</span> <span class="fs-3 text-warning">Rp
-              259,000</span></p>
-          <a href="#" class="btn btn-primary">Daftar disini</a>
+          <h2>Helpdesk Support 24 Jam</h2>
+          <p>Pelayanan Helpdesk 24/7 siap membantu anda</p>
+          <a href="https://wa.me/62895332360440?text=Hallo%20Admin%20Gli.Net" class="btn btn-primary">Hubungi Kami</a>
         </div>
       </div>
 
@@ -73,41 +71,41 @@
   <div class="icon-section container mt-4">
     <div class="row flex-nowrap">
       <div class="col">
-        <a href="/internet">
+        <a href="{{ url('/layanan') }}">
           <i class="bi bi-wifi"></i>
           <p>Internet</p>
         </a>
       </div>
-      <div class="col">
+      <!-- <div class="col">
         <a href="/internet-tv">
           <i class="bi bi-tv"></i>
           <p>Internet + TV</p>
         </a>
-      </div>
-      <div class="col">
-        <a href="/karir">
-          <i class="bi bi-briefcase"></i>
-          <p>Karir</p>
-        </a>
-      </div>
+      </div> -->
       <div class="col">
         <a href="/promo">
           <i class="bi bi-megaphone"></i>
           <p>Promo</p>
         </a>
       </div>
-      <div class="col">
+      <!-- <div class="col">
         <a href="/speed-test">
           <i class="bi bi-speedometer2"></i>
           <p>Speed Test</p>
         </a>
-      </div>
+      </div> -->
       <div class="col">
         <a href="/pengaduan">
           <i class="bi bi-headset"></i>
           <p>Pengaduan 24/7</p>
         </a>
       </div>
+      <!-- <div class="col">
+        <a href="/karir">
+          <i class="bi bi-briefcase"></i>
+          <p>Karir</p>
+        </a>
+      </div> -->
     </div>
   </div>
 
@@ -127,30 +125,38 @@
 
   <!-- Service Section -->
   <section class="service-section">
-    <h2>Layanan GLI.Net</h2>
+    <h2>Produk Kami</h2>
     <div class="container">
       <div class="row gy-4">
-        <div class="col-md-4">
-          <div class="service-card">
-            <img src="image/layanan.jpg" class="service-card-img" alt="Service 1">
-            <h3>Internet</h3>
-            <p>Internet stabil untuk kebutuhan bisnis anda.</p>
-            <a href="#" class="btn">Selengkapnya</a>
-          </div>
-        </div>
-        <div class="col-md-4">
+      <div class="col-md-3">
           <div class="service-card">
             <img src="image/feelectric.png" class="service-card-img" alt="Service 2">
-            <h3>Internet</h3>
-            <p>Internet stabil untuk kebutuhan bisnis anda.</p>
+            <h2>Internet</h2>
+            <p>Kami menghadirkan layanan internet berkecepatan tinggi tanpa batasan FUP, tersedia dalam berbagai opsi: Broadband Wireless, Dedicated Wireless, dan Fiber Optic. Nikmati koneksi stabil dan cepat yang mendukung kebutuhan digital Anda!</p>
+            <a href="{{ url('/layanan') }}" class="btn">Selengkapnya</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card">
+            <img src="image/feelectric.png" class="service-card-img" alt="Service 2">
+            <h2>Cctv</h2>
+            <p>Kami menyediakan layanan instalasi CCTV berkualitas tinggi dengan berbagai pilihan sistem canggih. Dapatkan pengawasan real-time yang andal untuk keamanan dan kenyamanan Anda!</p>
+            <a href="" class="btn">Selengkapnya</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card">
+            <img src="image/layanan.jpg" class="service-card-img" alt="Service 1">
+            <h2>Tower Building</h2>
+            <p>Kami menyediakan layanan pembuatan tower BTS, Menara Api, Triangle, Fourangle, dan lainnya, dikerjakan oleh tim profesional dengan kualitas terbaik untuk memenuhi kebutuhan Anda.</p>
             <a href="#" class="btn">Selengkapnya</a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="service-card">
             <img src="image/layanan.jpg" class="service-card-img" alt="Service 3">
-            <h3>Internet</h3>
-            <p>Internet stabil untuk kebutuhan bisnis anda.</p>
+            <h2>Network Building</h2>
+            <p>Infrastruktur jaringan yang andal mendukung produktivitas perusahaan Anda. Kami siap memberikan layanan konsultasi dan eksekusi manage service terbaik untuk kebutuhan bisnis Anda.</p>
             <a href="#" class="btn">Selengkapnya</a>
           </div>
         </div>
