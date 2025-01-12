@@ -188,6 +188,11 @@
         color: #dc3545;
     }
 
+    .btn-custom {
+    background-color: #000;
+    color: white;
+    }
+
     @media (max-width: 768px) {
         .header-section {
             flex-direction: column;
@@ -269,45 +274,48 @@
             <!-- INTERMEDIATE Plan -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
-                    <div class="card-title INTERMEDIATE">INTERMEDIATE</div>
+                    <div class="card-title INTERMEDIATE">BASIC</div>
                     <div class="card-body text-center">
-                        <p class="card-price">Rp 150.000<span>/Bulan</span></p>
+                        <p class="card-price">Rp 199.000<span>/Bulan</span></p>
                         <ul>
-                            <li>Disk Space <span>1GB</span></li>
-                            <li>Control Panel <i class="bi bi-check-circle text-success"></i></li>
-                            <li>Web Server <i class="bi bi-check-circle text-success"></i></li>
-                            <li>PHP 7.x <i class="bi bi-check-circle text-success"></i></li>
-                            <li>Max Data Transfer <span>Unlimited</span></li>
+                            <li>Speed UpTo <span>10 Mbps</span></li>
+                            <li>Unlimited Kuota <i class="bi bi-check-circle text-success"></i></li>
+                            <li>100 % Fiber Optic <i class="bi bi-check-circle text-success"></i></li>
+                            <li>24/7 Helpdesk Call <i class="bi bi-check-circle text-success"></i></li>
+                            <li>Maks Perangkat <span>7</span></li>
+                            <!-- <li>Max Data Transfer <span>Unlimited</span></li>
                             <li>FTP Account <span>4</span></li>
                             <li>MySQL DB <span>4</span></li>
                             <li>Mail Account <span>50</span></li>
                             <li>Sub Domain <span>20</span></li>
-                            <li>Jasa Upload <span class="text-danger"><i class="bi bi-x-circle"></i></span></li>
+                            <li>Jasa Upload <span class="text-danger"><i class="bi bi-x-circle"></i></span></li> -->
                             <li>Upgrade <span>Free</span></li>
                         </ul>
-                        <p class="min-contract">Min. Kontrak: 6 Bln</p>
+                        <!-- <p class="min-contract">Min. Kontrak: 6 Bln</p> -->
+                        <a href="https://wa.me/62895332360440?text=Hallo%20Admin%20Gli.Net,%20Saya%20ingin%20pesan%20paket%20BASIC,%20mohon%20follow%20up%20untuk%20langkah%20selanjutnya%20ya,%20Terimakasih!" class="btn btn-custom btn-lg mt-3">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
             <!-- BISNIS Plan -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
-                    <div class="card-title BISNIS">BISNIS</div>
+                    <div class="card-title BISNIS">HOME STANDARD</div>
                     <div class="card-body text-center">
-                        <p class="card-price">Rp 250.000<span>/Bulan</span></p>
+                        <p class="card-price">Rp 299.000<span>/Bulan</span></p>
                         <ul>
-                            <li>Disk Space <span>3GB</span></li>
-                            <li>Control Panel <i class="bi bi-check-circle text-success"></i></li>
-                            <li>Web Server <i class="bi bi-check-circle text-success"></i></li>
-                            <li>PHP 7.x <i class="bi bi-check-circle text-success"></i></li>
-                            <li>Max Data Transfer <span>Unlimited</span></li>
-                            <li>FTP Account <span>10</span></li>
+                            <li>Speed UpTo <span>20 Mbps</span></li>
+                            <li>Unlimited Kuota <i class="bi bi-check-circle text-success"></i></li>
+                            <li>100 % Fiber Optic <i class="bi bi-check-circle text-success"></i></li>
+                            <li>24/7 Helpdesk Call <i class="bi bi-check-circle text-success"></i></li>
+                            <li>Maks Perangkat <span>15</span></li>
+                            <!-- <li>Max Data Transfer <span>Unlimited</span></li>
                             <li>MySQL DB <span>10</span></li>
                             <li>Mail Account <span>100</span></li>
-                            <li>Sub Domain <span>40</span></li>
+                            <li>Sub Domain <span>40</span></li> -->
                             <li>Upgrade <span>Free</span></li>
                         </ul>
-                        <p class="min-contract">Min. Kontrak: 3 Bln</p>
+                        <!-- <p class="min-contract">Min. Kontrak: 3 Bln</p> -->
+                        <a href="https://wa.me/62895332360440?text=Hallo%20Admin%20Gli.Net,%20Saya%20ingin%20pesan%20paket%20HOME%20STANDARD,%20mohon%20follow%20up%20untuk%20langkah%20selanjutnya%20ya,%20Terimakasih!" class="btn btn-custom btn-lg mt-3">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -316,20 +324,22 @@
                 <div class="card">
                     <div class="card-title PRO">PRO</div>
                     <div class="card-body text-center">
-                        <p class="card-price">Rp 400.000<span>/Bulan</span></p>
+                        <p class="card-price">Rp 449.000<span>/Bulan</span></p>
                         <ul>
-                            <li>Disk Space <span>5GB</span></li>
-                            <li>Control Panel <i class="bi bi-check-circle text-success"></i></li>
-                            <li>Web Server <i class="bi bi-check-circle text-success"></i></li>
-                            <li>PHP 7.x <i class="bi bi-check-circle text-success"></i></li>
-                            <li>Max Data Transfer <span>Unlimited</span></li>
+                            <li>Speed UpTo <span>50 Mbps</span></li>
+                            <li>Unlimited Kuota <i class="bi bi-check-circle text-success"></i></li>
+                            <li>100 % Fiber Optic <i class="bi bi-check-circle text-success"></i></li>
+                            <li>24/7 Helpdesk Call <i class="bi bi-check-circle text-success"></i></li>
+                            <li>Maks Perangkat <span>35</span></li>
+                            <!-- <li>Max Data Transfer <span>Unlimited</span></li>
                             <li>FTP Account <span>20</span></li>
                             <li>MySQL DB <span>20</span></li>
                             <li>Mail Account <span>Unlimited</span></li>
-                            <li>Sub Domain <span>Unlimited</span></li>
+                            <li>Sub Domain <span>Unlimited</span></li> -->
                             <li>Upgrade <span>Free</span></li>
                         </ul>
-                        <p class="min-contract">Min. Kontrak: 3 Bln</p>
+                        <!-- <p class="min-contract">Min. Kontrak: 3 Bln</p> -->
+                        <a href="https://wa.me/62895332360440?text=Hallo%20Admin%20Gli.Net,%20Saya%20ingin%20pesan%20paket%20PRO,%20mohon%20follow%20up%20untuk%20langkah%20selanjutnya%20ya,%20Terimakasih!" class="btn btn-custom btn-lg mt-3">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -338,20 +348,22 @@
                 <div class="card">
                     <div class="card-title PLATINUM">PLATINUM</div>
                     <div class="card-body text-center">
-                        <p class="card-price">Rp 700.000<span>/Bulan</span></p>
+                        <p class="card-price">Rp 549.000<span>/Bulan</span></p>
                         <ul>
-                            <li>Disk Space <span>10GB</span></li>
-                            <li>Control Panel <i class="bi bi-check-circle text-success"></i></li>
-                            <li>Web Server <i class="bi bi-check-circle text-success"></i></li>
-                            <li>PHP 7.x <i class="bi bi-check-circle text-success"></i></li>
-                            <li>Max Data Transfer <span>Unlimited</span></li>
+                            <li>Speed UpTo <span>85 Mbps</span></li>
+                            <li>Unlimited Kuota <i class="bi bi-check-circle text-success"></i></li>
+                            <li>100 % Fiber Optic <i class="bi bi-check-circle text-success"></i></li>
+                            <li>24/7 Helpdesk Call <i class="bi bi-check-circle text-success"></i></li>
+                            <li>Maks Perangkat <span>50</span></li>
+                            <!-- <li>Max Data Transfer <span>Unlimited</span></li>
                             <li>FTP Account <span>30</span></li>
                             <li>MySQL DB <span>30</span></li>
                             <li>Mail Account <span>Unlimited</span></li>
-                            <li>Sub Domain <span>Unlimited</span></li>
+                            <li>Sub Domain <span>Unlimited</span></li> -->
                             <li>Upgrade <span>Free</span></li>
+                            <a href="https://wa.me/62895332360440?text=Hallo%20Admin%20Gli.Net,%20Saya%20ingin%20pesan%20paket%20PLATINUM,%20mohon%20follow%20up%20untuk%20langkah%20selanjutnya%20ya,%20Terimakasih!" class="btn btn-custom btn-lg mt-3">Pesan Sekarang</a>
                         </ul>
-                        <p class="min-contract">Min. Kontrak: 1 Bln</p>
+                        <!-- <p class="min-contract">Min. Kontrak: 1 Bln</p> -->
                     </div>
                 </div>
             </div>
