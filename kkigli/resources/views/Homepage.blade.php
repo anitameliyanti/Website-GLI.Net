@@ -48,7 +48,7 @@
       </div>
 
       <div class="carousel-item">
-        <div class="banner" style="background-image: url('image/banner-b.jpg');">
+        <div class="banner" style="background-image: url('image/banner-b.png');">
           <h2>Helpdesk Support 24 Jam</h2>
           <p>Pelayanan Helpdesk 24/7 siap membantu anda</p>
           <a href="https://wa.me/62895332360440?text=Hallo%20Admin%20Gli.Net" class="btn btn-primary">Hubungi Kami</a>
@@ -118,7 +118,7 @@
           <p>GLI.net menyediakan layanan internet dedicated & broadband dengan infrastruktur memadai dan berkualitas
             tinggi.</p>
         </div>
-        <img src="image/globe.png" alt="Globe" class="globe-image">
+        <img src="image/logo.png" alt="Logo_gli" class="globe-image">
       </div>
     </div>
   </section>
@@ -130,15 +130,15 @@
       <div class="row gy-4">
       <div class="col-md-3">
           <div class="service-card">
-            <img src="image/feelectric.png" class="service-card-img" alt="Service 2">
+            <img src="image/internet.jpg" class="service-card-img" alt="Service 2">
             <h2>Internet</h2>
-            <p>Kami menghadirkan layanan internet berkecepatan tinggi tanpa batasan FUP, tersedia dalam berbagai opsi: Broadband Wireless, Dedicated Wireless, dan Fiber Optic. Nikmati koneksi stabil dan cepat yang mendukung kebutuhan digital Anda!</p>
+            <p>Kami menghadirkan layanan internet berkecepatan tinggi tanpa batasan FUP, tersedia dalam berbagai opsi: Broadband Wireless, Dedicated Wireless, dan Fiber Optic.</p>
             <a href="{{ url('/layanan') }}" class="btn">Selengkapnya</a>
           </div>
         </div>
         <div class="col-md-3">
           <div class="service-card">
-            <img src="image/feelectric.png" class="service-card-img" alt="Service 2">
+            <img src="image/cctv.jpg" class="service-card-img" alt="Service 2">
             <h2>Cctv</h2>
             <p>Kami menyediakan layanan instalasi CCTV berkualitas tinggi dengan berbagai pilihan sistem canggih. Dapatkan pengawasan real-time yang andal untuk keamanan dan kenyamanan Anda!</p>
             <a href="" class="btn">Selengkapnya</a>
@@ -146,7 +146,7 @@
         </div>
         <div class="col-md-3">
           <div class="service-card">
-            <img src="image/layanan.jpg" class="service-card-img" alt="Service 1">
+            <img src="image/tower.jpg" class="service-card-img" alt="Service 1">
             <h2>Tower Building</h2>
             <p>Kami menyediakan layanan pembuatan tower BTS, Menara Api, Triangle, Fourangle, dan lainnya, dikerjakan oleh tim profesional dengan kualitas terbaik untuk memenuhi kebutuhan Anda.</p>
             <a href="#" class="btn">Selengkapnya</a>
@@ -154,7 +154,7 @@
         </div>
         <div class="col-md-3">
           <div class="service-card">
-            <img src="image/layanan.jpg" class="service-card-img" alt="Service 3">
+            <img src="image/network.jpg" class="service-card-img" alt="Service 3">
             <h2>Network Building</h2>
             <p>Infrastruktur jaringan yang andal mendukung produktivitas perusahaan Anda. Kami siap memberikan layanan konsultasi dan eksekusi manage service terbaik untuk kebutuhan bisnis Anda.</p>
             <a href="#" class="btn">Selengkapnya</a>

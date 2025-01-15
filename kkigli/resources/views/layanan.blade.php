@@ -258,12 +258,12 @@
                 <h5>Jaringan Cepat</h5>
             </div>
             <div class="col-md-4">
-                <i class="bi bi-server"></i>
-                <h5>Jaringan Handal</h5>
+                <i class="bi bi-clock"></i>
+                <h5>Customer Support 24/7</h5>
             </div>
             <div class="col-md-4">
                 <i class="bi bi-envelope"></i>
-                <h5>Layanan Profesional</h5>
+                <h5>Profesional dan Berpengalaman</h5>
             </div>
         </div>
     </section>
