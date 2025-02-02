@@ -83,11 +83,52 @@
         </a>
       </div> -->
       <div class="col">
-        <a href="/promo">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#promoModal">
           <i class="bi bi-megaphone"></i>
           <p>Promo</p>
         </a>
       </div>
+      <!-- Modal -->
+<div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="promoModalLabel">Detail Paket HOME STANDARD</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <!-- Gambar Promo -->
+          <div class="col-md-5 text-center">
+            <img src="image/about konten 1.png" class="img-fluid rounded" alt="Home Standard">
+          </div>
+          
+          <!-- Info Harga dan Fitur -->
+          <div class="col-md-7">
+            <h4 class="text-danger fw-bold">Rp 299.000 <span class="fs-6">/Bulan</span></h4>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-speedometer2 text-primary"></i> Speed UpTo <strong>20 Mbps</strong></li>
+              <li><i class="bi bi-check-circle text-success"></i> Unlimited Kuota</li>
+              <li><i class="bi bi-fiber-manual-record text-warning"></i> 100% Fiber Optic</li>
+              <li><i class="bi bi-headset text-info"></i> 24/7 Helpdesk Call</li>
+              <li><i class="bi bi-laptop text-secondary"></i> Maks Perangkat: <strong>15</strong></li>
+              <li><i class="bi bi-arrow-up-circle text-success"></i> Upgrade <strong>Free</strong></li>
+            </ul>
+            <p class="mt-3">Paket ini cocok untuk penggunaan rumah tangga dengan <br>
+            kebutuhan internet stabil dan cepat.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Modal -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a href="https://wa.me/62895332360440?text=Hallo%20Admin%20Gli.Net" class="btn btn-success text-white">Pesan Sekarang</a>
+      </div>
+    </div>
+  </div>
+</div>
+
       <!-- <div class="col">
         <a href="/speed-test">
           <i class="bi bi-speedometer2"></i>
@@ -95,7 +136,7 @@
         </a>
       </div> -->
       <div class="col">
-        <a href="/pengaduan">
+        <a href="https://wa.me/62895332360440?text=Hallo%20Admin%20Gli.Net">
           <i class="bi bi-headset"></i>
           <p>Pengaduan 24/7</p>
         </a>
